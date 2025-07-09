@@ -1,7 +1,7 @@
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 
 def url_setting(chord):
-    # URL의 기본 경로
+    
     base_url = "https://www.all-guitar-chords.com/chords/index"
     print("url setting!!!!!",chord) #보통 Gbm7이런식으로 값이 하나만 들어간다. 
     # 이중 배열을 순회하여 URL 생성
