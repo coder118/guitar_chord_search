@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko">
+<!--<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>기타 코드 이미지 검색</title>
@@ -10,6 +10,86 @@
         
         <input type="text" name="inform" placeholder="기타 코드 입력">
         <button type="submit">검색</button>
+    </form>
+</body>
+</html>-->
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>기타 코드 이미지 검색</title>
+    <style>
+        body {
+            background-color: #fff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        h1 span {
+            color: #e57373; /* 연한 빨간색 */
+            text-shadow: 1px 1px 2px #aaa;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        input[type="text"] {
+            padding: 14px 20px;
+            border: none;
+            border-radius: 30px;
+            width: 400px;
+            font-size: 1.2rem;
+            background-color: #f9efef;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+            color: #444;
+        }
+
+        input::placeholder {
+            color: #c4b9b9;
+        }
+
+        button {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            width: 80px;
+            background-color: #f4b7b7;
+            border: none;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1><span>Guitar</span> Chords</h1>
+    <form action="/search" method="post">
+        <input type="text" name="inform" placeholder="search">
+        <button type="submit">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="돋보기">
+        </button>
     </form>
 </body>
 </html>
